@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'TT Hoves';
+    src: url(./fonts/TTHoves-Regular.woff);
+    font-style: normal;
+}
+body {
+    font-family: 'TT Hoves';
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000929;
+}

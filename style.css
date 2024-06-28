@@ -138,8 +138,33 @@ h1 {
     border-radius: 24px;
 }
 
-.Dashboard img {
+/* .Dashboard img {
     width: calc(67.6vw + 86.2px);
     position: absolute;
     left: calc(16.2vw + -43.1px);
+} */
+
+/*third screen*/
+
+h2 {
+    font-size: calc(5.7vw + -2.2px); /*80 - 20*/
+    text-align: center;
+}
+.third_title {
+    width: calc(47.6vw + 14.2px); /*700 - 200*/
+    margin-bottom: calc(6.2vw + -9.1px); /*80 - 15*/
+}
+.third_title span {
+    color: #3981F7;
+}
+.third_screen {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: calc(9.5vw + -17.1px) calc(5.7vw + -2.2px); /*120 - 20*/
+}
+.companies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(2.7vw + 69.6px);
 }

@@ -26,7 +26,7 @@ section, header, footer {
     color: #000929;
 }
 .first_page {
-    margin-bottom: calc(4.6vw + 22.1px);
+    padding-bottom: calc(4.6vw + 22.1px); /*88 - 40*/
 }
 header {
     padding-top: 28px;
@@ -84,7 +84,7 @@ h1 {
     font-size: calc(6.9vw + 1.2px);
     text-align: center;
     width: calc(57.1vw + 127.1px);
-    margin-bottom: calc(0.4vw + 18.5px);
+    margin-bottom: calc(0.4vw + 18.5px); /*24 -20*/
 }
 .freelancers {
     color: #3981F7;
@@ -131,18 +131,12 @@ h1 {
 
 /*second screen*/
 
-.empty {
-    width: 100%;
-    height: 694px;
-    background-color: #F5F9FF;
-    border-radius: 24px;
+.second_screen {
+    padding-bottom: calc(4.6vw + 22.1px) 0px; /*88 - 40*/
 }
-
-/* .Dashboard img {
-    width: calc(67.6vw + 86.2px);
-    position: absolute;
-    left: calc(16.2vw + -43.1px);
-} */
+.Dashboard img {
+    width: calc(88.6vw + 4.5px);
+}
 
 /*third screen*/
 
@@ -161,10 +155,218 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items:center;
-    padding: calc(9.5vw + -17.1px) calc(5.7vw + -2.2px); /*120 - 20*/
+    padding-top: calc(5.7vw + 37.7px); /*120 - 60*/
+    padding-bottom: calc(5.7vw + 37.7px); /*120 - 60*/;
 }
 .companies {
     display: flex;
     flex-wrap: wrap;
     gap: calc(2.7vw + 69.6px);
+}
+/*forth screen*/
+
+.forth_screen {
+    padding-top: calc(5.7vw + 37.7px); /*120 - 60*/
+    padding-bottom: calc(5.7vw + 37.7px); /*120 - 60*/;
+}
+.blue {
+    color: #3981F7;
+}
+.forth_screen h2 {
+    width: calc(40vw + 84px); /*660 - 240*/
+    margin-bottom: calc(0.4vw + 18.5px);  /*24 - 20*/
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.forth_screen img{
+    width: calc(88.6vw + 4.5px);
+}
+.subtitle2 {
+    font-size: calc(0.6vw + 11.7px); /*20 - 14*/
+    font-family: 'TT hoves medium';
+    text-align: center;
+    font-weight: 500px;
+    color: #44444B;
+    width: calc(40vw + 84px); /*660 - 240*/
+}
+
+/*fifth screen*/
+
+.fifth_screen {
+    padding-top: calc(5.7vw + 37.7px); /*120 - 60*/
+    padding-bottom: calc(5.7vw + 37.7px); /*120 - 60*/;
+    position: relative;
+}
+.hire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: calc(4.6vw + 22.1px); /*88 - 40*/
+}
+.fifth_screen h2 {
+    margin-bottom: calc(0.4vw + 18.5px);  /*24 - 20*/
+}
+#map {
+    width: calc(67.6vw + 86.2px);
+}
+.map_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*card*/
+
+.card {
+    background: #0A112F;
+    border-radius: 16px;
+    padding: 40px 32px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 324px;
+    height: 356px;
+    position: relative;
+}
+.name {
+    font-size: 32px;
+    align-items:center;
+    color: white; 
+    margin-bottom: 9px;
+}
+.location span{
+    font-size: 20px;
+    color: #9096A2;
+}
+.line {
+    border: 1px solid #404D63;
+    width: 260px;
+    margin: 32px 0px;
+}
+.roleAndRate {
+    display: flex;
+    gap: 38px;
+    margin-bottom: 32px;
+}
+.role span {
+    color: #9096A2;
+    font-size: 16px;
+}
+.role {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.briefcase span {
+    color: white;
+    font-size: 20px;
+}
+.rate span {
+    color: #9096A2;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+.dollar span {
+    color: white;
+    font-size: 20px;
+}
+.rate {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.hire_btn {
+    color: #0A112F;
+    font-size: 16px;
+    font-family: 'TT Hoves demibold';
+    background-color: white;
+    width: 260px;
+    height: 48px;
+    border: none;
+    border-radius: 16px
+}
+
+.flag {
+    position: absolute;
+    top: -30px;
+    right: -40px;
+}
+.full_card {
+    position: absolute;
+    left: calc(67.7vw + -231px); /*744 - 33*/
+    top: calc(15.7vw + 318px); /*545 - 380*/
+}
+
+/*sixth screen*/
+
+.title_sixth h2 {
+    width: calc(40vw + 84px); /*660 - 240*/
+}
+.title_sixth span {
+    width: calc(40vw + 84px); /*660 - 240*/
+}
+.title_sixth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card_pay {
+    padding: 24px;
+    background-color: rgb(228, 228, 228);
+    width: 438px;
+    height: 260px;
+}
+.calendar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+.calendar span {
+    font-size: 16px;
+    opacity: 50%;
+}
+.first_part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.price {
+    margin-left: 48px;
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    height: 103px;
+    height: 28px;
+}
+.cost {
+    font-family: 'TT Hoves medium';
+    font-size: 32px;
+}
+.cost span {
+    font-size: 24px;
+    opacity: 50%;
+}
+.pending {
+    display: flex;
+    gap: 8px;
+    padding: 4px 12px;
+    background-color: #FEF6EB;
+    border-radius: 100px;
+    align-items: center;
+}
+.pending span {
+    color:#FAA745;
+    font-size: 14px;
+}
+.client {
+    border: 1px solid #E7EAEE;
+    border-radius: 16px;
+    padding: 16px;
 }

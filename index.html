@@ -4,54 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./splide-4.1.3/splide-4.1.3/dist/css/splide.min.css">
     <title>Payrole</title>
 </head>
 <body>
-    <main>
-        <header>
-            <div class="logo">
-                <img src="./images/Logo.png" alt="logo">
+    <header>
+        <div class="logo">
+            <img src="./images/Logo.png" alt="logo">
+        </div>
+        <div class="menu">
+            <div class="dropdown">
+                <div class="btn_header">
+                    <span>How it works</span>
+                    <img src="./images/arrow.png" alt="">
+                </div>
+                <div class="dropdown-content">
+                  <p>Привет Мир!</p>
+                </div>  
             </div>
-            <div class="menu">
-                <div class="dropdown">
-                    <div class="btn_header">
-                        <span>How it works</span>
-                        <img src="./images/arrow.png" alt="">
-                    </div>
-                    <div class="dropdown-content">
-                      <p>Привет Мир!</p>
-                    </div>  
+            <div class="dropdown">
+                <div class="btn_header">
+                    <span>Features</span>
+                    <img src="./images/arrow.png" alt="">
                 </div>
-                <div class="dropdown">
-                    <div class="btn_header">
-                        <span>Features</span>
-                        <img src="./images/arrow.png" alt="">
-                    </div>
-                    <div class="dropdown-content">
-                      <p>Привет Мир!</p>
-                    </div>  
-                </div>
-                <div class="dropdown">
-                    <span>Pricing</span>
-                </div>
-                <div class="dropdown">
-                    <div class="btn_header">
-                        <span>Resources</span>
-                        <img src="./images/arrow.png" alt="">
-                    </div>
-                    <div class="dropdown-content">
-                      <p>Привет Мир!</p>
-                    </div>  
-                </div>
+                <div class="dropdown-content">
+                  <p>Привет Мир!</p>
+                </div>  
             </div>
-            <div class="login">
-                <div>
-                    <span>Log in</span>
-                </div>
-                <button class="learn_header">Learn More</button>
+            <div class="dropdown">
+                <span>Pricing</span>
             </div>
+            <div class="dropdown">
+                <div class="btn_header">
+                    <span>Resources</span>
+                    <img src="./images/arrow.png" alt="">
+                </div>
+                <div class="dropdown-content">
+                  <p>Привет Мир!</p>
+                </div>  
+            </div>
+        </div>
+        <div class="login">
+            <div>
+                <span>Log in</span>
+            </div>
+            <button class="learn_header">Learn More</button>
+        </div>
 
-        </header>
+    </header>
+    <main>
         <section class="first_page">
             <div class="title">
                 <h1>Global Payroll Platform made for <span class="freelancers">Freelancers</span></h1>
@@ -64,10 +65,9 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="second_screen">
             <div class="Dashboard">            
-                <img src="./images/Dashboard.png" alt="Dashboard">
-                <div class="empty"></div>
+                <img src="./images/Content.png" alt="Dashboard">
             </div>
         </section>
         <section class="third_screen">
@@ -89,7 +89,96 @@
                 </div>
             </div>
         </section>
+        <section class="forth_screen">
+           <div class="offer">
+            <h2>From Offer Letter to Onboarded in <span class="blue">Minutes</span> </h2>
+            <span class="subtitle2">Create a custom contract that’s compliant with local laws, send it to sign, and they'll get onboarded almost instantly.</span>
+           </div>
+           <img src="./images/Illustration.png" alt="">
+        </section>
 
+        <!-- <section class="fifth_screen">
+            <div class="hire">
+             <h2>Hire from <span class="blue">Anywhere</span></h2>
+             <span class="subtitle2">Leverage our local entities and expertise to avoid the usual time, cost, and risk of going it alone.</span>
+            </div>
+            <div class="map_container">
+                <img src="./images/Illustration (2).png" alt="" id="map">
+            </div>
+            <div class="full_card">
+                <div class="card">
+                    <div class="flag">
+                        <img src="./images/Flag - Denmark.png" alt="denmark">
+                    </div>
+                    <span class="name">Martin Nielsen</span>
+                    <div class="location">
+                        <img src="./images/location.png" alt="">
+                        <span>Copenhagen, Denmark</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="roleAndRate">
+                        <div class="role">
+                            <span>Role</span>
+                            <div class="briefcase">
+                                <img src="./images/briefcase.png" alt="">
+                                <span>Copywriter</span>
+                            </div>
+                        </div>
+                        <div class="rate">
+                            <span>Rate</span>
+                            <div class="dollar">
+                                <img src="./images/dollar-circle.png" alt="">
+                                <span>$50/hr</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="hire_btn">Hire Contractor</button>
+                </div>
+            </div>
+         </section> -->
+         <section class="sixth_screen">
+            <div class="send_full">
+                <div class="title_sixth">
+                    <h2>Send Payment <span class="blue">Faster</span></h2>
+                    <span class="subtitle2">We’ll keep you and your hires compliant with ever-changing taxes and regulations.</span>
+                </div>
+                <section class="splide" aria-labelledby="carousel-heading">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide">
+                                <div class="card_pay">
+                                    <div class="first_part">
+                                        <div class="calendar">
+                                            <img src="./images/calendar.png" alt="">
+                                            <span>Upcoming Payroll</span>
+                                        </div>
+                                        <span class="blue">April 1, 2022</span>
+                                    </div>
+                                    <div class="price">
+                                        <span class="cost">$2,670<span>.50</span></span>
+                                        <div class="pending">
+                                            <img src="./images/Ellipse.png" alt="">
+                                            <span>PENDING</span>
+                                        </div>
+                                    </div>
+                                    <div class="client">
+                                        <span>Client</span>
+                                        <div>
+                                          <div>
+                                            <img src="./images/avatar.png" alt="">
+                                            <span>Adam Kovalenko <br>BlueLabs</span>
+                                          </div>
+                                          <button class="send">Send Invoice</button>
+                                        </div>
+                                    </div>
+                                </div>
+                              </li>
+                              <li class="splide__slide">Slide 02</li>
+                          </ul>
+                    </div>
+                </section>
+            </div>
+         </section>
 
 
 
@@ -98,13 +187,13 @@
 
 
     </main>
-
-
-
-
-
-
-
+<script src="./splide-4.1.3/splide-4.1.3/dist/js/splide.min.js"></script>
 <script src="./script.js"></script>
 </body>
+<script>
+    document.addEventListener( 'DOMContentLoaded', function() {
+      var splide = new Splide( '.splide' );
+      splide.mount();
+    } );
+  </script>
 </html>

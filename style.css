@@ -198,7 +198,7 @@ h2 {
 
 .fifth_screen {
     padding-top: calc(5.7vw + 37.7px); /*120 - 60*/
-    padding-bottom: calc(5.7vw + 37.7px); /*120 - 60*/;
+    padding-bottom: calc(-0.1vw + 298px); /*120 - 250*/;
     position: relative;
 }
 .hire {
@@ -303,6 +303,17 @@ h2 {
 
 /*sixth screen*/
 
+.sixth_screen {
+    padding-top: calc(5.7vw + 37.7px); /*120 - 60*/
+    padding-bottom: calc(5.7vw + 37.7px); /*120 - 60*/;
+}
+
+.send_full {
+    box-shadow: 0px 36px 52px 0px #00000008;
+    padding: calc(5.1vw + -10px) 0px calc(5.1vw + -10px) calc(5.1vw + -10px);
+    border-radius: 24px;
+}
+
 .title_sixth h2 {
     width: calc(40vw + 84px); /*660 - 240*/
 }
@@ -313,12 +324,17 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: calc(4vw + 14.4px);
 }
+
+/*card first slide*/
+
 .card_pay {
-    padding: 24px;
-    background-color: rgb(228, 228, 228);
-    width: 438px;
+    padding: calc(0.8vw + 13px); /*24 - 16*/
+    width: calc(8.4vw + 317px); /*438 - 350*/
     height: 260px;
+    border-radius: 16px;
+    border: solid 1px #E7EAEE;
 }
 .calendar {
     display: flex;
@@ -334,23 +350,23 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
 }
-
 .price {
-    margin-left: 48px;
+    margin-left: calc(4.6vw + -17.8px); /*48 - 0*/
     gap: 16px;
     display: flex;
     align-items: center;
-    height: 103px;
+    width: 103px;
     height: 28px;
+    margin-bottom: calc(1.4vw + -0.5px); /*20 - 5*/
 }
 .cost {
     font-family: 'TT Hoves medium';
-    font-size: 32px;
+    font-size: calc(1.3vw + 12.8px); /*32 - 18*/
 }
 .cost span {
-    font-size: 24px;
+    font-size: calc(0.8vw + 13px); /*24 - 16*/
     opacity: 50%;
 }
 .pending {
@@ -364,9 +380,182 @@ h2 {
 .pending span {
     color:#FAA745;
     font-size: 14px;
+    font-family: 'TT Hoves medium';
 }
 .client {
     border: 1px solid #E7EAEE;
     border-radius: 16px;
     padding: 16px;
+    margin-left: calc(4.6vw + -17.8px); /*48 - 0*/
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: 'TT Hoves medium';
+}
+.client_title {
+    opacity: 50%;
+    font-size: 16px;
+}
+.avatar_name {
+    display: flex;
+    align-items: center;
+    gap: calc(1vw + 0.9px); /*16 - 5*/
+}
+.job {
+    font-size: 14px;
+    opacity: 50%;
+}
+.name_job {
+    display: flex;
+    flex-direction: column;
+    min-width: calc(5.7vw + 37.7px); /*120 - 60*/
+}
+.send {
+    background-color:#0A112F;
+    color: white;
+    width: 113px;
+    height: 40px;
+    border-radius: 100px
+}
+.clientAndBtn {
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+.date {
+    font-family: 'TT Hoves medium';
+}
+
+/*text second slide*/
+
+.quick {
+    padding: 24px;
+    border-radius: 16px;
+    /* border: 1px solid #E7EAEE; */
+    width: calc(17.3vw + 282px); /*532 - 350*/
+    height: 264px;
+    font-family: 'TT Hoves medium';
+    line-height: 150%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.quick_title {
+    font-size: calc(0.6vw + 11.7px); /*20 - 14*/
+}
+.first_quick {
+    display: flex;
+    flex-direction: column;
+    gap: calc(1vw + 0.9px); /*16 - 5*/
+}
+.linkBold {
+    font-size: calc(0.6vw + 11.7px); /*20 - 14*/
+    letter-spacing: -1%;
+}
+.link {
+    font-size: calc(0.6vw + 11.7px); /*20 - 14*/
+    letter-spacing: -1%;
+    opacity: 50%;
+}
+.invopay {
+    display: flex;
+    justify-content: space-between;
+}
+.text {
+    background-color: #F7F8FB;
+    border-radius: 16px;
+    padding: calc(0.8vw + 13px); /*24 - 16*/
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.text p {
+    color: #627188;
+    font-family: 'TT Hoves regular';
+}
+.text span {
+    color: #3981F7;
+}
+
+/*seventh screen*/
+
+.seventh_screen {
+    padding-top: calc(5.7vw + 37.7px); /*120 - 60*/
+    padding-bottom: calc(5.7vw + 37.7px); /*120 - 60*/
+    padding-left: calc(24.8vw + -76.5px); /*280 - 20*/
+    padding-right: calc(24.8vw + -76.5px); /*280 - 20*/
+}
+.love_full {
+    box-shadow: 0px 36px 52px 0px #00000008;
+    border-radius: 24px;
+    padding: calc(5.1vw + -10px) calc(6.5vw + -5.2px) calc(6.6vw + -1.6px); /*64 - 10*/ /*88 - 20*/ /*93 - 24*/
+}
+.autonomyAndImg {
+    padding: 40px 80px;
+    box-shadow: 0px 36px 52px 0px #00000008;
+    border-radius: 16px;
+    font-family: 'TT Hoves medium';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    position: relative;
+}
+.title_love {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(0.4vw + 18.5px);  /*24 - 20*/
+    margin-bottom: calc(6.5vw + -15.2px); /*78 - 10*/
+}
+.title_love h2 {
+    width: calc(39.2vw + 146.9px); /*712 - 300*/
+}
+.love_subtitle {
+    display: block;
+    font-size: calc(0.8vw + 13px) /*24 - 16*/;
+    text-align: center;
+}
+.autonomy {
+    width: calc(23.4vw + 208.6px); /*546 - 300*/
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+}
+.love_location {
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+.CEO {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #9096A2;
+}
+
+.autonomyAndImg img{
+    width: 256px;
+}
+.ellipse {
+    width: 160px;
+    height: 160px;
+    background-color: #0B0B0C;
+    padding: 18px 39px 34px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: -168px;
+    top: -80px;
+}
+.kavichki {
+    font-family: 'Montserrat';
+    color: white;
+    letter-spacing: -2%;
+    font-weight: 600;
+    font-size: 160px;
+    line-height: 200px;
+    align-items: center;
 }

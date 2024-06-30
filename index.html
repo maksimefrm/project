@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./splide-4.1.3/splide-4.1.3/dist/css/splide.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <title>Payrole</title>
 </head>
 <body>
@@ -97,7 +100,7 @@
            <img src="./images/Illustration.png" alt="">
         </section>
 
-        <!-- <section class="fifth_screen">
+        <section class="fifth_screen">
             <div class="hire">
              <h2>Hire from <span class="blue">Anywhere</span></h2>
              <span class="subtitle2">Leverage our local entities and expertise to avoid the usual time, cost, and risk of going it alone.</span>
@@ -135,14 +138,14 @@
                     <button class="hire_btn">Hire Contractor</button>
                 </div>
             </div>
-         </section> -->
+         </section>
          <section class="sixth_screen">
             <div class="send_full">
                 <div class="title_sixth">
                     <h2>Send Payment <span class="blue">Faster</span></h2>
                     <span class="subtitle2">We’ll keep you and your hires compliant with ever-changing taxes and regulations.</span>
                 </div>
-                <section class="splide" aria-labelledby="carousel-heading">
+                <section class="splide slider" aria-labelledby="carousel-heading">
                     <div class="splide__track">
                           <ul class="splide__list">
                               <li class="splide__slide">
@@ -152,7 +155,7 @@
                                             <img src="./images/calendar.png" alt="">
                                             <span>Upcoming Payroll</span>
                                         </div>
-                                        <span class="blue">April 1, 2022</span>
+                                        <span class="blue date">April 1, 2022</span>
                                     </div>
                                     <div class="price">
                                         <span class="cost">$2,670<span>.50</span></span>
@@ -162,21 +165,56 @@
                                         </div>
                                     </div>
                                     <div class="client">
-                                        <span>Client</span>
-                                        <div>
-                                          <div>
-                                            <img src="./images/avatar.png" alt="">
-                                            <span>Adam Kovalenko <br>BlueLabs</span>
+                                        <span class="client_title">Client</span>
+                                        <div class="clientAndBtn">
+                                          <div class="avatar_name">
+                                            <img src="./images/avatar.png" alt="" id="avatar">
+                                            <div class="name_job">
+                                                <span>Adam Kovalenko</span>
+                                                <span class="job">BlueLabs</span>
+                                            </div>
                                           </div>
                                           <button class="send">Send Invoice</button>
                                         </div>
                                     </div>
                                 </div>
                               </li>
-                              <li class="splide__slide">Slide 02</li>
+                              <li class="splide__slide">
+                                <div class="quick">
+                                        <div class="first_quick">
+                                            <span class="quick_title">Quick Pay</span>
+                                            <div class="invopay">
+                                                <span class="linkBold"><span class="link">invopay.to/</span>adamkovalenko</span>
+                                                <img src="./images/Group 14295.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <p>You can receive payments quickly with Quick Pay feature. You can share the payment link to request the payment to clients.</p>
+                                            <span>Learn More</span>
+                                        </div>
+                                </div>
+                              </li>
                           </ul>
                     </div>
                 </section>
+            </div>
+         </section>
+         <section class="seventh_screen">
+            <div class="love_full">
+                <div class="title_love">
+                    <h2>Love from <span class="blue">Global </span>Businesses</h2>
+                    <span class="subtitle2">What they say about our services.</span>
+                </div>
+                <div class="autonomyAndImg">
+                    <div class="ellipse">
+                        <span class="kavichki">“</span>
+                    </div>
+                    <div class="autonomy">
+                        <span class="love_subtitle">“We can bring on contractors in any country in minutes. The team loves the autonomy they get.”</span>
+                        <span class="love_location">Christina Yulia, <span class="CEO">CEO @ Zendesk</span></span>
+                    </div>
+                    <img src="./images/Avatars.png" alt="">
+                </div>
             </div>
          </section>
 
@@ -192,7 +230,27 @@
 </body>
 <script>
     document.addEventListener( 'DOMContentLoaded', function() {
-      var splide = new Splide( '.splide' );
+      var splide = new Splide( '.splide', {
+        perPage: 2.4,
+        arrows: false,
+        // gap: "21px",
+        pagination: false,
+        breakpoints: {
+            1428: {
+                perPage: 2
+            },
+            1105: {
+                perPage: 1.7
+            },
+            900: {
+                perPage: 1.4
+            },
+            700: {
+                perPage: 1,
+                pagination: true
+            }
+        }
+      } );
       splide.mount();
     } );
   </script>

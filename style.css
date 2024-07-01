@@ -11,7 +11,12 @@
 @font-face {
     font-family: 'TT Hoves medium';
     src: url(./fonts/TTHoves-Medium.woff);
-    font-style: normal;
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'TT Hoves regular';
+    src: url(./fonts/TTHoves-Regular.woff);
+    font-style: normal; 
 }
 body {
     font-family: 'TT Hoves Demibold';
@@ -39,7 +44,6 @@ label.checkbtn {
     cursor: pointer;
 }
 nav {
-    padding: 1.5rem 2rem;
     display: none;
    }
 .checkbtn {
@@ -64,11 +68,11 @@ nav {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
    }
 .nav-mobile ul {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
    }
 .nav-mobile li {
     color: #0A112F;
-    padding: 1px;
+    padding: 5px;
     display: block;
    }
 .howWork2,.company_footer2,.solution2,.resourses2{

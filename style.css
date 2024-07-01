@@ -25,6 +25,69 @@ section, header, footer {
     box-sizing: border-box;
     color: #000929;
 }
+
+/*hamburger*/
+
+input[type = "checkbox"].checkbtn {
+    display: none;
+}
+#menu_header {
+    width: 30px;
+    height: 30px;
+}
+label.checkbtn {
+    cursor: pointer;
+}
+nav {
+    padding: 1.5rem 2rem;
+    display: none;
+   }
+.checkbtn {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+   }
+.nav-mobile {
+    display: none;
+   }
+#check:checked ~ .nav-mobile {
+    display: block;
+   }
+.nav-mobile {
+    position: absolute;
+    padding: 15px;
+    left: 20px;
+    background: white;
+    border-radius: 16px;
+    z-index: 1;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   }
+.nav-mobile ul {
+    margin-bottom: 15px;
+   }
+.nav-mobile li {
+    color: #0A112F;
+    padding: 1px;
+    display: block;
+   }
+.howWork2,.company_footer2,.solution2,.resourses2{
+    font-family: 'TT Hoves medium';
+    font-size: 16px;
+    color: #9096A2;
+    list-style: none;
+}
+.menu_learn {
+    font-size: 20px;
+    color: #3981F7;
+}
+.howWork2_,.company_footer2_,.solution2_,.resourses2_ {
+    font-size: 20px;
+    color:#3981F7;
+}
+
+/*first screen*/
+
 .first_page {
     padding-bottom: calc(4.6vw + 22.1px); /*88 - 40*/
 }
@@ -36,20 +99,25 @@ header {
     align-items:center;
 }
 header span {
-    font-size: 18px;
+    font-size: calc(0.4vw + 12.5px); /*18 - 14*/
 }
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
+.dropdown-content p {
+    margin-bottom: 24px;
+    font-family: 'TT Hoves medium';
+    font-size: 16px;
+}
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
+    border-radius: 16px;
+    padding: 20px 16px 1px;
     z-index: 1;
 }
 
@@ -67,7 +135,7 @@ header span {
     height: 48px;
     border: 0px;
     border-radius: 100px;
-    font-size: 18px;
+    font-size: calc(0.4vw + 12.5px); /*18 - 14*/
     font-family: 'TT hoves demibold';
 }
 .menu {
@@ -78,7 +146,7 @@ header span {
 .login {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: calc(0.8vw + 13px); /*24 -20*/
 }
 h1 {
     font-size: calc(6.9vw + 1.2px);
@@ -160,8 +228,9 @@ h2 {
 }
 .companies {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: calc(2.7vw + 69.6px);
+    gap: calc(7.4vw + 1px); /*108 - 30*/
 }
 /*forth screen*/
 
@@ -539,23 +608,154 @@ h2 {
     width: 256px;
 }
 .ellipse {
-    width: 160px;
-    height: 160px;
+    width: calc(7.6vw + 50.2px); /*160 - 80*/
+    height: calc(7.6vw + 50.2px); /*160 - 80*/
     background-color: #0B0B0C;
-    padding: 18px 39px 34px;
+    padding: calc(1.7vw + -6.6px) 39px 34px;
     border-radius: 100px;
     display: flex;
     justify-content: center;
     position: absolute;
-    left: -168px;
-    top: -80px;
+    left: calc(-11.2vw + -6.1px); /*-168 - -50*/
+    top: calc(-3.8vw + -25.1px);
 }
 .kavichki {
-    font-family: 'Montserrat';
+    font-family: "Montserrat", sans-serif;
     color: white;
     letter-spacing: -2%;
     font-weight: 600;
-    font-size: 160px;
-    line-height: 200px;
+    font-size: calc(7.6vw + 50.2px); /*160 - 80*/
+    line-height: calc(7.6vw + 90.2px); /*200 -120*/
     align-items: center;
+}
+
+/*eighth screen*/
+.eighth_screen {
+    padding-top: calc(5.7vw + 37.7px); /*120 - 60*/
+    padding-bottom: calc(5.7vw + 37.7px); /*120 - 60*/
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: calc(1vw + 26.2px); /*40 - 30*/
+}
+.Today_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(0.4vw + 18.5px);  /*24 - 20*/
+}
+.create {
+    background-color: #0A112F;
+    color: white;
+    width: calc(5.7vw + 157.7px); /*240 - 180*/
+    height: calc(1.9vw + 52.5px); /*80 - 60*/
+    border-radius: 100px;
+    font-size: calc(0.4vw + 18.5px);  /*24 - 20*/
+}
+
+/*footer*/
+
+.footer_list {
+    display: grid;
+    grid-template-columns: repeat(5, calc(8vw + 84.8px));
+    column-gap: calc(1.5vw + -5.9px);
+    grid-template-areas: 
+        "Logo HowWork Company Solution Resources";
+}
+
+#logo_footer {
+    grid-area: Logo;
+}
+
+.howWork_list {
+    grid-area: HowWork;
+}
+
+.company_footer_list {
+    grid-area: Company;
+}
+
+.solution_list {
+    grid-area: Solution;
+}
+
+.resources_list {
+    grid-area: Resources;
+}
+
+footer {
+    padding-left: calc(16.2vw + -43.1px); /*190 - 20*/
+    padding-right: calc(15.4vw + -40.1px); /*182 - 20*/
+}
+
+.footer_list li {
+    font-family: 'TT Hoves medium';
+    font-size: 16px;
+    color: #9096A2;
+    margin-bottom: 16px;
+    list-style: none;
+}
+
+.footer_list li:first-child {
+    font-family: 'TT Hoves demibold';
+    color: #0A112F;
+    font-size: 18px;
+}
+
+.smth {
+    font-family: 'TT Hoves regular';
+    color: #9096A2;
+    font-size: 16px;
+    display: flex;
+    gap: calc(2.1vw + 1.8px); /*32 -10*/
+}
+
+.footer_img {
+    display: flex;
+    gap: calc(1.3vw + 4.8px); /*24 - 10*/
+}
+
+.final_part {
+    margin-top: calc(9.2vw + -17.8px); /*122 - 20*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    gap: calc(32.4vw + -116px);
+}
+
+@media (max-width: 1100px) {
+    .footer_list {
+        grid-template-columns: repeat(4, calc(8vw + 84.8px));
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "Logo HowWork Company"
+            "Logo Solution Resources";
+        gap: 10px;
+    }
+}
+@media (max-width: 800px) {
+    .flag {
+        display: none;
+    }
+    .full_card {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .fifth_screen {
+        padding-bottom: calc(5.7vw + 37.7px); /*120 - 60*/
+    }
+}
+@media (max-width: 1000px) {
+    .menu {
+        display: none;
+    }
+    .learn_header {
+        display: none;
+    }
+    nav {
+        display: block;
+    }
 }

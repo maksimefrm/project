@@ -762,4 +762,7 @@ footer {
     nav {
         display: block;
     }
+    .final_part {
+        gap: 20px;
+    }
 }

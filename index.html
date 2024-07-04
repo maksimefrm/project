@@ -238,7 +238,10 @@
                                             <span class="quick_title">Quick Pay</span>
                                             <div class="invopay">
                                                 <span class="linkBold"><span class="link">invopay.to/</span>adamkovalenko</span>
-                                                <img src="./images/Group 14295.png" alt="">
+                                                <div class="btn_slider">
+                                                    <button><img src="./images/copy.png" alt=""></button>
+                                                    <button><img src="./images/edit-2.png" alt=""></button>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="text">
@@ -345,7 +348,6 @@
       var splide = new Splide( '.splide', {
         perPage: 2.4,
         arrows: false,
-        // gap: "21px",
         pagination: false,
         breakpoints: {
             1428: {
@@ -359,8 +361,9 @@
             },
             700: {
                 perPage: 1,
-                pagination: true
-            }
+                pagination: true,
+                gap: "40px",
+            },
         }
       } );
       splide.mount();

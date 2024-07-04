@@ -506,12 +506,12 @@ h2 {
     border-radius: 16px;
     /* border: 1px solid #E7EAEE; */
     width: calc(22.1vw + 213.8px); /*532 - 300*/
-    height: 264px;
+    height: 280px;
     font-family: 'TT Hoves medium';
-    line-height: 140%;
+    line-height: 150%;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
 }
 .quick_title {
     font-size: calc(0.6vw + 11.7px); /*20 - 14*/
